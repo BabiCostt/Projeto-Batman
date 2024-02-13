@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color:aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .4s;
+    font-family: "Kdam Thmor Pro" , sans-serif
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#Logo {
+    width: 150px;
+    height: auto;
+}
+
+#Banner {
+    background-image: url("https://cinepop.com.br/wp-content/uploads/2021/11/batman_45.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+h1 {
+    font-family: "Kdam Thmor Pro" , sans-serif ;
+    color: aliceblue;
+    padding: 50px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+  
+.fotos-banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%px;
+    padding-top: -10px;
+  }
+  
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-right: 20px;
+  }
+  
+.card {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+  
+.card:hover {
+    transform: scale(1.02);
+  }
+  
+.banner-1 {
+    background-image: url(./batman2.jpg);
+  }
+  
+.banner-2 {
+    background-image: url(./bt3.jpg)
+  }
+  
+ .banner-3 {
+    background-image: url(./bt4.jpeg);
+  }
+  
+.banner-4 {
+    background-image: url(./batman5.png);
+  }
+  
+.banner-5 {
+    background-image: url(./batman6.jpg);
+  }
+  
+.banner-6 {
+    background-image: url(./batman7.jfif);
+  }
+  
+.banner-7 {
+    background-image: url(./batman8.jfif);
+  }
+  
+.banner-8 {
+    background-image: url(./batman4.jpg);
+}
+  
+.banner-9 {
+    background-image: url(./batman9.jfif);
+}
+  
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family:"Kdam Thmor Pro" , sans-serif ; 
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+  .footer-navigation {
+      display: block;
+  }
+
+  nav {
+      display: none;
+  }
+
+  #Banner {
+      background-position: 40%;
+  }
+  header {
+    text-align: center;
+}
+
+  .fotos-banner-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .card {
+      width: 45%; /* Define a largura para que caibam duas fotos por linha */
+      margin: 5px; /* Adiciona um pequeno espaço entre as fotos */
+  }
+
+  footer {
+      text-align: center;
+      padding: 10px;
+  }
+}
+
